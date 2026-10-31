@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florisa Oliveros | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">F<span>.</span>O</a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Open navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HOME -->
+        <section class="hero section" id="home">
+            <div class="hero-content reveal">
+                <span class="small-label">WELCOME TO MY WORLD ✨</span>
+
+                <h1>Hello, I'm <span class="gradient-text">Florisa Oliveros</span></h1>
+
+                <h2 class="typing-line">
+                     <span id="typingText"></span><span class="cursor">|</span>
+                </h2>
+
+                <p>
+                    A passionate BSIT student exploring technology,
+                    creativity, and new opportunities to grow.
+                    Welcome to my little corner of the internet!
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Explore My World ↗</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+
+                <div class="social-text">
+                    <span>Dream big.</span>
+                    <span>Keep learning.</span>
+                    <span>Stay inspired. ♡</span>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="profile-card">
+
+                    <!-- PHOTO SLIDER -->
+                    <div class="photo-slider">
+                        <div class="ps-dots" id="psDots"></div>
+
+                        <!-- Picture 1 -->
+                        <div class="ps-slide active">
+                            <div class="ps-fallback">F</div>
+                            <img src="photo1.jpg" alt="Florisa Oliveros" onerror="this.remove()">
+                            <div class="ps-caption">✨ Dream big, start small</div>
+                        </div>
+
+                        <!-- Picture 2 -->
+                        <div class="ps-slide">
+                            <div class="ps-fallback">F</div>
+                            <img src="photo2.jpg" alt="Florisa Oliveros" onerror="this.remove()">
+                            <div class="ps-caption">💻 Learning something new every day</div>
+                        </div>
+
+                        <!-- Picture 3 -->
+                        <div class="ps-slide">
+                            <div class="ps-fallback">F</div>
+                            <img src="photo3.jpg" alt="Florisa Oliveros" onerror="this.remove()">
+                            <div class="ps-caption">🌸 Creative, curious, and always growing</div>
+                        </div>
+                    </div>
+
+                    <h3>Florisa Oliveros</h3>
+                    <p>BSIT Student</p>
+                </div>
+
+                <span class="floating-star star-one">✦</span>
+                <span class="floating-star star-two">✧</span>
+                <span class="floating-star star-three">♡</span>
+                <span class="floating-bubble">Keep shining!</span>
+            </div>
+
+            <a href="#about" class="scroll-down">SCROLL TO DISCOVER ↓</a>
+        </section>
+
+        <!-- ABOUT / SKILLS / HOBBIES / MOTTO SLIDER -->
+        <section class="section content-section" id="about">
+            <div class="slider reveal" id="mainSlider">
+
+                <button class="slider-arrow prev" id="slPrev" aria-label="Previous slide">‹</button>
+                <button class="slider-arrow next" id="slNext" aria-label="Next slide">›</button>
+
+                <div class="slider-viewport">
+                    <div class="slider-track" id="slTrack">
+
+                        <!-- SLIDE 1: ABOUT -->
+                        <div class="slide" data-name="about">
+                            <div class="section-heading">
+                                <span class="small-label">GET TO KNOW ME</span>
+                                <h2>About <span class="gradient-text">Me</span></h2>
+                                <p>A little introduction about who I am.</p>
+                            </div>
+                            <div class="about-card glass-card">
+                                <div class="about-symbol">☁️</div>
+                                <div>
+                                    <h3>My Journey, My Story</h3>
+                                    <p>
+                                        Hi! I'm Florisa Oliveros, currently living in Quiot Pardo, Cebu City.
+                                        I study at the University of Cebu - Main Campus and I'm taking up
+                                        Bachelor of Science in Information Technology (BSIT). I enjoy learning
+                                        new things, discovering new ideas, and improving my skills step by step.
+                                    </p>
+                                    <p>
+                                        My goal is to finish my studies and become an IT professional soon
+                                        who creates useful, creative, and user-friendly digital experiences.
+                                        I believe that every small step brings me closer to my dreams.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 2: SKILLS -->
+                        <div class="slide" data-name="skills">
+                            <div class="section-heading">
+                                <span class="small-label">WHAT I'M LEARNING</span>
+                                <h2>My <span class="gradient-text">Skills</span></h2>
+                                <p>Growing my knowledge one step at a time.</p>
+                            </div>
+                            <div class="card-grid slide-grid">
+                                <article class="info-card">
+                                    <div class="card-icon">🤝</div>
+                                    <h3>Teamwork</h3>
+                                    <p>Collaborating, sharing ideas, and learning together.</p>
+                                </article>
+                                <article class="info-card">
+                                    <div class="card-icon">💻</div>
+                                    <h3>Programming</h3>
+                                    <p>Learning programming logic and problem-solving.</p>
+                                </article>
+                                <article class="info-card">
+                                    <div class="card-icon">🌱</div>
+                                    <h3>Adaptability</h3>
+                                    <p>Quickly adjusting to new tools, people, and situations.</p>
+                                </article>
+                                <article class="info-card">
+                                    <div class="card-icon">🗂️</div>
+                                    <h3>Multi-tasking</h3>
+                                    <p>Managing several tasks and deadlines at the same time.</p>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 3: HOBBIES -->
+                        <div class="slide" data-name="hobbies">
+                            <div class="section-heading">
+                                <span class="small-label">THINGS I ENJOY</span>
+                                <h2>My <span class="gradient-text">Hobbies</span></h2>
+                                <p>The little things that make me happy.</p>
+                            </div>
+                            <div class="card-grid slide-grid">
+                                <article class="info-card hobby-card">
+                                    <div class="card-icon">🎧</div>
+                                    <h3>Listening to Music</h3>
+                                    <p>Music helps me relax and feel inspired.</p>
+                                </article>
+                                <article class="info-card hobby-card">
+                                    <div class="card-icon">🏸</div>
+                                    <h3>Playing Outdoor Games</h3>
+                                    <p>Staying active and having fun with friends.</p>
+                                </article>
+                                <article class="info-card hobby-card">
+                                    <div class="card-icon">📚</div>
+                                    <h3>Reading Books</h3>
+                                    <p>Exploring new stories, ideas, and knowledge.</p>
+                                </article>
+                                <article class="info-card hobby-card">
+                                    <div class="card-icon">🌷</div>
+                                    <h3>Spending Time with Loved Ones</h3>
+                                    <p>Making meaningful memories with special people.</p>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 4: MOTTO (katapusan) -->
+                        <div class="slide slide-motto" data-name="motto">
+                            <div class="section-heading">
+                                <span class="small-label">WORDS I LIVE BY</span>
+                                <h2>My <span class="gradient-text">Motto</span></h2>
+                                <p>The thought that keeps me going.</p>
+                            </div>
+                            <div class="motto-mini">
+                                <span class="mm-label">MY MOTTO IN LIFE</span>
+                                <p class="mm-text">
+                                    “Believe in yourself, trust the process,
+                                    and never stop <span>growing.</span>”
+                                </p>
+                                <div class="mm-deco"><i>✧</i><i>☁</i><i>✦</i><i>☁</i><i>✧</i></div>
+                            </div>
+                            <a href="#contact" class="continue-btn" id="continueBtn">
+                                Click to continue <span>↓</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <div class="slider-dots" id="slDots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section content-section" id="contact">
+            <div class="section-heading reveal">
+                <span class="small-label">LET'S CONNECT</span>
+                <h2>Contact <span class="gradient-text">Me</span></h2>
+                <p>Have a question or want to say hello? Send me a message!</p>
+            </div>
+
+            <form class="contact-form glass-card reveal" id="contactForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5"
+                          placeholder="Write your message here..." required></textarea>
+
+                <button type="submit" class="btn btn-primary">
+                    Validate Message ✉
+                </button>
+
+                <p class="form-note" id="formNote" aria-live="polite">
+                    Demo form: this checks your details but does not send email.
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="logo">F<span>.</span>O</a>
+        <p>Made with ♡ by Florisa Oliveros</p>
+        <p>© <span id="year"></span> All rights reserved.</p>
+        <a href="#home" class="back-top">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
